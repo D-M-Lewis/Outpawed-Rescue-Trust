@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { List } from 'react-bootstrap-icons'
 import logo from '../../public/outpawed-logo.webp'
 import MobileMenu from './MobileMenu'
+import DonationModal from './DonationModal'
 
 const Navbar = () => {
     const [menuIsOpen, openMenu] = useState(false);
@@ -31,7 +32,9 @@ const Navbar = () => {
                         <h4 className='self-center text-purple text-2xl'>MENU</h4>
                         <List id="hamburger-icon" className='self-center text-purple text-2xl' />
                     </button>
+
                 </div>
+
             </div>
 
             {/* if menuIsOpen is true, show moile menu */}
